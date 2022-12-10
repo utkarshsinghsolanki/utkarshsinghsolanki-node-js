@@ -1,0 +1,59 @@
+extends layout.pug 
+
+block header
+    .header
+        img.menuBtn(src='/static/images/menu.png' alt='')
+        p
+          a(href='#') Utkarsh Singh
+        nav.nav-go.nav
+          ul
+            li.nav-btn
+              a(href='/') Home
+            li.nav-btn
+              a(href='/#about') About
+            li.nav-btn
+              a(href='/#experties') Experties
+            li.nav-btn
+              a(href='#') Portfolio
+            li.nav-btn
+              a(href='/#services') Services
+            li.nav-btn
+              a(href='/#contact') Contact
+    
+block content
+    .main(onclick='navgo()')
+      .search
+        input#searchBar(type='search' placeholder='Search')
+      .project
+        .p8.project-content
+          a.project-btn(href='/static/portfolios/Calculator') Calculator
+        .p7.project-content
+          a.project-btn(href='/static/portfolios/Postman') Post-Man API
+        .p6.project-content
+          a.project-btn(href='/static/portfolios/Digital Clock') Digital Clock
+        .p5.project-content
+          a.project-btn(href='/static/portfolios/Magic Notes') Magic Note&apos;s
+        .p4.project-content
+          a.project-btn(href="/static/portfolios/Joy's Cafe") Joy&apos;s Cafe
+        .p3.project-content
+          a.project-btn(href='/static/portfolios/Fantechgamer') FantechGamer
+        .p2.project-content
+          a.project-btn(href='/static/portfolios/Education Portal STS') Education Portal STS
+        .p1.project-content
+          a.project-btn(href='/static/portfolios/Blog Website') Blog Website
+
+        link(rel='stylesheet' href='/static/files/portfolio.css')
+
+
+script
+  document.getElementById("searchBar").addEventListener("input", () => {
+    let value = document.getElementById("searchBar").value.toLowerCase();
+    let card = document.getElementsByClassName("project-content");
+    Array.from(card).forEach((element) => {
+      if (element.innerText.toLowerCase().includes(value)){
+        element.style.display = "block";
+      } else{
+        element.style.display = "none";
+      }
+    });
+  });

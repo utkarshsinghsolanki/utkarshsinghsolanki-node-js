@@ -1,0 +1,159 @@
+extends layout.pug
+
+block header
+    .header
+        img.menuBtn(src='/static/images/menu.png' alt='')
+        p
+          a(href='#') Utkarsh Singh
+        nav.nav-go.nav
+          ul
+            li.nav-btn
+              a(href='/#') Home
+            li.nav-btn
+              a(href='#about') About
+            li.nav-btn
+              a(href='#experties') Experties
+            li.nav-btn
+              a(href='https://github.com/utkarshsinghsolanki?tab=repositories') Portfolio
+            li.nav-btn
+              a(href='#services') Services
+            li.nav-btn
+              a(href='#contact') Contact
+    
+block content
+    main(onclick='navgo()')
+      .intro
+        .introText
+          div
+            h1 Hi,
+            h2
+              | I&apos;m 
+              b Utkarsh Singh
+            p Full-Stack Developer / Web Developer / Programmer
+            br
+            br
+            .buttons
+              a.introBtn(href='https://github.com/utkarshsinghsolanki?tab=repositories') Portfolio
+              a.introBtn(href='#contact') Contact-Me
+        .introImage
+          img(src='/static/images/utkarsh.png' alt='')
+      #about.about
+        p.heading About Me
+        br
+        br
+        .abouttxt
+          p.about-txt
+            | I&apos;m Utkarsh Singh, I&apos;m From
+            | Gonda Uttar Pradesh, India. I&apos;m a Freelancer, Web
+            | Developer, Full-Stack Developer, Ethical Hacker.
+            br
+            br
+            |                     I&apos;m getting my hands dirty in web development,
+            |                     networking, and ethical hacking. Currently learning Python programming language and It&apos;s Django Framework. I have 2/5
+            |                     years of
+            |                     experience in programming, 2 years of experience in
+            |                     Web Development. I&apos;m a self-motivated fast learner who
+            |                     is able to master skill&apos;s quickly, loves to explore new
+            |                     horizons, and is driven by new technology.
+            br
+            br
+            |                     I am an enthusiast for Technology and an aspiring Web-Developer, I&apos;m looking
+            |                     forward to being a professional in Computer Science. I&apos;m a self educated and focused
+            |                     passionate learner and believe in working for quality,
+            |                     not for quantity.
+            br
+            br
+            |                     My Hobbies are Programming, Gaming, Learning new technologies, etc...
+            br
+            br
+            i
+              b
+                | &quot;You&apos;ll see me tried and struggling but
+                | never quitting.&quot;
+      #experties.skills
+        span
+          p.heading Experties
+        br
+        .skillscontent
+          .skillContainer
+            .skills-bar.c
+              i C
+          br
+          .skillContainer.skillContainerOdd
+            .skills-bar.python
+              i Python
+          br
+          .skillContainer
+            .skills-bar.html
+              i HTML
+          br
+          .skillContainer.skillContainerOdd
+            .skills-bar.css
+              i Css
+          br
+          .skillContainer
+            .skills-bar.js
+              i JavaScript
+          br
+          .skillContainer.skillContainerOdd
+            .skills-bar.node
+              i Node Js
+          br
+          .skillContainer
+            div
+              i And Yet Lot More To Learn
+      #services.services
+        span
+          p.heading Our Services
+        br
+        br
+        .services-technology
+          .servicesBox
+            .ico
+              img(src='/static/images/web.png' alt='Web Development')
+            br
+            div
+              h1 Web Development
+          .servicesBox
+            .ico
+              img(src='/static/images/responsive.png' alt='Responsive Design')
+            br
+            div
+              h1 Responsive Design
+          .servicesBox.servicesBoxLast
+            .ico
+              img(src='/static/images/scripting.png' alt='Better Scripting')
+            br
+            div
+              h1 Better Scripting
+          .servicesBox.servicesBoxLast
+            .ico
+              img(src='/static/images/seo.png' alt='SEO Effective')
+            br
+            div
+              h1 SEO Effective
+      #contact.contact
+        p.heading Contact Me
+        br
+        .contactcontent
+          a.contact-btn(href='mailto:29singhutkarsh2907@gmail.com' target='_blank') Mail: 29singhutkarsh2907@gmail.com
+          br
+          a.contact-btn(href='https://www.upwork.com/workwith/utkarshsingh23' target='_blank') Upwork: Utkarsh Singh
+          br
+          p.contact-btn Discord: Utkarsh Solanki #6863
+      .accounts
+        a(href='https://www.upwork.com/freelancers/~0145c6db557b7b95c4' target='_blank')
+          img(src='/static/images/upwork.jpg' alt='')
+          | Upwork
+        |             |
+        a(href='https://www.hackerrank.com/29singhutkarsh21' target='_blank')
+          img(src='/static/images/hackerrank.jpg' alt='')
+          | HackerRank
+        |             |
+        a(href='https://github.com/utkarshsinghsolanki' target='_blank')
+          img(src='/static/images/github.png' alt='')
+          | Github
+        |             |
+        a(href='https://www.instagram.com/devilx_utkarsh29/' target='_blank')
+          img(src='/static/images/insta.png' alt='')
+          | Instagram

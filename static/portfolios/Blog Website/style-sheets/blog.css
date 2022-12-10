@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    font-family: system-ui;
+    transition: 1s;
+}
+nav{
+    background: transparent ;
+    display:flex;
+    justify-content:space-between;
+    padding:1%;
+    align-items: center;  
+    background: linear-gradient(#03161d,#05171f);  
+    position: fixed;
+    width: 100%;
+    top:0px;
+}
+.Logo{
+    border-radius: 189px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+#menucls{
+    display: none;
+}
+#menuopn{
+    display: none;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+}
+.li{
+    margin: 5px;
+    display: inline-block;
+}
+.nav-btn{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 10px;
+}
+.nav-btn:hover{
+    color: rgb(199, 199, 199);
+    text-decoration:underline red 2px;
+    transition: 0.5s;
+}
+
+.searchbox{
+    padding: 0 50px;
+    width: 50%;
+    text-align: right;
+    
+}
+.search{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius:20px;
+    padding:0 10px;
+}
+.search-btn{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius:20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0px;
+}
+.search-btn:hover{
+    background: rgba(255, 255, 255, 0.445);
+    transition:0.5s;
+}
+
+/* main */
+main h1{
+    text-align: center;
+    margin: 120px;
+    margin-bottom: 0%;
+}
+.blog{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    vertical-align:text-top;
+}
+.b1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+.b1-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+    /* float:right; */
+}
+.b2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.b2-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+    /* float:right; */
+}
+.b3{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+.b3-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+}
+.b4{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.b4-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+    /* float:right; */
+}
+.b5{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.b5-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+    /* float:right; */
+}
+.b6{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.b6-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+    /* float:right; */
+}
+.b7{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.b7-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+    /* float:right; */
+}
+.b8{
+    width: 80%;
+    margin: auto;   
+    display: flex;
+    align-items: center;
+}
+.b8-img{
+    border-radius:  189px;
+    border: 5px solid rgb(212, 210, 210);
+    /* float:right; */
+}
+footer{
+    text-align: center;
+    background:linear-gradient(#03536e,#06161e);
+    padding: 15px;
+    color: #fff;
+}
+@media only screen and (max-width:680px)
+{
+    .navbar{
+        align-items:baseline;
+    }
+    #menuopn{
+        display:block;
+    }
+    #logo{
+        display: none;
+    }
+    /* #menu{
+        display: none;
+    } */
+    #menu{
+        position: absolute;
+        background: transparent;  
+        top: -100px;
+        left:0%;
+        opacity:0;
+        z-index: -1px;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .navbar,.li{
+        display: block;
+    }
+    .b1{
+        display: block;
+        text-align: center;
+    }
+    .b2{
+        display: block;
+        text-align: center;
+    }
+    .b3{
+        display: block;
+        text-align: center;
+    }.b4{
+        display: block;
+        text-align: center;
+    }.b5{
+        display: block;
+        text-align: center;
+    }.b6{
+        display: block;
+        text-align: center;
+    }.b7{
+        display: block;
+        text-align: center;
+    }.b8{
+        display: block;
+        text-align: center;
+    }
+}

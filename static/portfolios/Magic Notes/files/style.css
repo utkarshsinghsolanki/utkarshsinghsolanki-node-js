@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    color: white;
+    align-items: center;
+    background: rgb(46, 46, 46);
+    flex-wrap: wrap;
+}
+.search-area{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+.search-btn{
+    padding: 5px 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+/* Main */
+main{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    width: 60vw;
+    align-items: center;
+}
+.head{
+    margin: 20px;
+    color: rgb(65, 65, 65);
+}
+.add-notes{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 25px;
+    border: 2px solid rgb(70, 70, 70);
+}
+#note-heading{
+    width: 60vw;
+    height: 5vh;
+    font-weight: bold;
+    padding: 5px;
+}
+#note{
+    padding: 5px;
+    width: 60vw;
+    height: 10vh;
+    margin: auto;
+}
+.add-btn{
+    margin: 50px 0 10px 0;
+    background: #1a73e8;
+    color: #fff;
+    border-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.add-btn:active{
+    transition:0s;
+    background: #174ea6;
+}
+.notes-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+}
+.notes{
+    min-width: 250px;
+    margin:50px;
+    padding: 10px;
+    background: rgba(240, 240, 240, 0.658);
+    border-radius: 5px;
+    overflow: visible;
+    border: 1px solid #1a73e8;
+}
+.notes button{
+    background: #1a73e8;
+    color: #fff;
+    border-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.notes button:focus{
+    transition:0s;
+    background: #174ea6;
+}

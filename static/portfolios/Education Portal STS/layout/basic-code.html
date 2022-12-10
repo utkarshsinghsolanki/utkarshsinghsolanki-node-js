@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SmartCms Team" />
+    <meta name="keyword" content="multipurpose, business" />
+    <title>Educational Portal: St. Thomas School Gonda</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    </style> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="navlinks" class="nav-mobile">
+        <ul>
+            <span class="menu-cls"><i class="fa fa-times" onclick="hidemenu()"></i></span>
+            <li><a class="nav-btn" href="/index.html">Home</a></li>
+            <li class="about"><a onclick="aboutmenu()" class="nav-btn" data-toggle="dropdown">About <i class="fa fa-caret-down"></i></a></li>
+            <li><a class="nav-btn" href="/rules/general-rules.html">Rules & Regulations<i class="fa fa-caret-down"></i></a></li>
+            <li><a class="nav-btn" href="#">Registration/Addmission</a></li>
+            <li><a class="nav-btn" href="/contact.html">Contact</a></li>
+            <li class="li"><a class="nav-btn" href="/alumni.html">Alumni</a></li>
+            <li class="li"><a class="nav-btn" href="/Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <header>
+        <span class="menu-opn"><i class="fa fa-bars" onclick="showmenu()"></i></span>
+        <nav >
+            <ul>
+                <li><a class="nav-btn" href="/index.html">Home</a></li>
+                <li><a class="nav-btn" onmouseleave="aboutexit()" onmousemove="aboutshow()">About <i id="drop-menu"class="fa fa-sort-desc"></i></a></li>
+                <li><a class="nav-btn" href="/rules/general-rules.html">Rules & Regulations <i id="drop-menu"class="fa fa-sort-desc"></i></a></li>
+                <li><a class="nav-btn" onmouseleave="regexit()" onmousemove="regshow()">Registration/Addmission</i></a></li>
+                <li><a class="nav-btn" href="/contact.html">Contact</a></li>
+                <li class="li"><a class="btn" href="/alumni.html">Alumni</a></li>
+                <li class="li"><a class="btn" href="/Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="about-menu" id="about" onmousemove="aboutshow()" onmouseleave="aboutexit()">
+            <br>
+            <a class="about-btn" href="/about/history.html">History</a>
+            <a class="about-btn" href="/about/school-logo.html">School Logo</a>
+            <a href="/about/houses.html" class="about-btn">Houses</a>
+            <a href="/about/uniform.html" class="about-btn">Uniform</a>
+            <a href="/about/prayer.html" class="about-btn">School Prayer</a>
+            <a href="/about/hymn.html" class="about-btn">School Hymn</a>
+            <a href="/about/school-song.html" class="about-btn">School Song</a>
+        </div>
+        <div class="registration-menu" id="registration"  onmouseleave="regexit()" onmousemove="regshow()">
+            <br>
+            <a href="#" class="reg-btn">Online Registration</a>
+            <a href="#" class="reg-btn">Shortlisted Candidate for Interation</a>
+            <a href="#" class="reg-btn">Final List For Addmission</a>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <img src="/Images/banner.bmp" alt="banner" width="100%" height="100%">
+        </div>
+        <div class="sepration"><h3>School Songs</h3></div>
+
+
+
+
+
+    </main> 
+    <footer>
+        <h6>&copy; 2016 St. Thomas School, Gonda| .All Rights Reserved</h6>
+    </footer>
+    
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0px";
+            navlinks.style.transition = "1s";
+        }
+            function hidemenu(){
+                navlinks.style.right = "-80vw";
+            }
+            var about = document.getElementById("about");
+            function aboutshow(){
+                about.style.transition = "1s";
+                about.style.display = "block";
+                about.style.top = "80px";
+            }
+            function aboutexit(){
+                about.style.display = "none ";
+            }
+        var registration = document.getElementById("registration");
+            function regshow(){
+                registration.style.transition = "1s";
+                registration.style.display = "block";
+                registration.style.top = "80px";
+            }
+            function regexit(){
+                registration.style.display = "none ";
+            }
+
+    </script>
+
+</body> 
+</html>

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+    
+}
+
+body {
+    background: rgb(14, 14, 14);   
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("images/watchdog.jpg") no-repeat ;
+    background-size: 100vw 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+.header a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header a h1{
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(158, 117, 117));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header img{
+    width: 50px;
+    border-radius: 100%;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    padding:10px 15px;
+    /* background:rgb(56, 56, 56); */
+    margin: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li a:hover{
+    text-decoration: underline red 3px;
+    background: transparent;
+}
+
+
+/* main */
+
+.home{
+    background: rgb(26, 26, 26) url(images/watchdog.jpg) no-repeat scroll;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    /* background-position: center; */
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content:center;
+    align-items: center;
+    max-height: 650px;
+    min-height: 350px
+}
+.home h1{
+    font-size:  10em;
+    background: -webkit-linear-gradient(#fff, #f43c60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.top-games{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20vh;
+    margin: 50px;
+}
+
+.top-games h1{
+    color: #f43c60;
+    font-family: 'Play', sans-serif;
+    font-size: 2.4em;
+}
+
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.g{
+    margin: 10px;
+    box-sizing: border-box;
+}
+.g img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#videos{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20vh;
+
+}
+#videos h1{
+    color: #f43c60;
+    font-family: 'Play', sans-serif;
+    font-size: 2.4em;
+}
+
+#videos iframe{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5%;
+}
+#videos iframe:hover{
+    transform: scale(1.05)
+}
+
+.ytvideo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#videos span{
+    margin: 30px;
+}
+span a{
+    padding: 10px 15px;
+    border: 3px solid #f43c60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+span a:hover{
+    background: #f43c60;
+    color: #fff;
+
+}
+
+
+.contact{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+}
+.contactform{
+    display: flex;
+    justify-content:space-evenly;
+    width: 80vw;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.details input{
+    background: rgb(14, 14, 14);
+    width: 20vw;
+    height: 40px;
+    border: 2px solid #f43c60;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    min-width: 150px;
+}
+
+.review textarea{
+    background: rgb(14, 14, 14);
+    width: 40vw;
+    height: 200px;
+    border: 2px solid #f43c60;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+
+}
+
+.contact .button{
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    border: 2px solid #f43c60;
+}
+
+.contact .button:hover{
+    background: #f43c60;
+}
+
+
+footer{
+    text-align: center;
+    background: #69d2e8;
+    padding: 30px;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+   .top-games{
+       justify-content:unset;
+   }
+   #videos{
+       margin-top: 30%;
+   }
+    
+}
+
+@media screen and (max-width: 760px){
+    .home h1{
+        font-size:  5em;
+    }
+    .home{
+        max-height:60vh;
+        background-size: 100vw 100vh;
+    }
+    nav ul li a{
+        padding: 5px 10px;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .header{
+        display: block;
+    }
+}

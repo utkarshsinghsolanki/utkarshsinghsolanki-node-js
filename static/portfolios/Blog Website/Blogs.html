@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="style-sheets/blog.css">
+</head>
+<body>
+    <header>
+        <nav>
+                
+        <div style="width:50%;" class="navbar">
+            <img src="images/Logo.jpg" id="menuopn" class="Logo" height="50px" width="50px"alt="" onclick="menutoggle()">
+                <img src="images/Logo.jpg" id="menucls" class="Logo" height="50px" width="50px"alt="" onclick="menuclose()">
+                <img src="images/Logo.jpg" class="Logo" height="50px" width="50px" id="logo">
+            <ul id="menu">
+                <li class="li"><a href="index.html" class="nav-btn"><img src="images/home.png" width="20px" > Home</a></li>
+                <li class="li"><a href="index.html#Blog" class="nav-btn"><img src="images/writing.png" width="20px" > Blog</a></li>
+                <li class="li"><a href="index.html#About" class="nav-btn"><img src="images/info.png" width="20px" > About</a></li>
+                <li class="li"><a href="index.html#Contact" class="nav-btn"><img src="images/contacts.png" width="20px" > Contact</a></li>
+            </ul>
+        </div>
+        <div class="searchbox">
+            <input type="search"  class="search" placeholder="Search">
+            <button type="submit" class="search-btn" > <img src="images/search.png"height="15px" width="15px" alt=""></button>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <p class="footer">&copy;Copyright 2022 || All Rights Reserved by<a href="https://utkarshsinghsolanki.github.io">https://utkarshsinghsolanki.github.io/</a></p>
+    </footer>
+    
+</body>
+
+    <script>
+        var menu =document.getElementById("menu");
+        var menuopn =document.getElementById("menuopn");
+        function menutoggle(){
+            menu.style.background="linear-gradient(#03161d,#05171f)";
+            menuopn.style.display="none";
+            menucls.style.display="block";
+            menu.style.top="80px";
+            menu.style.opacity="5";
+            menu.style.background="linear-gradient(#03161d,#05171f)";
+        }
+        var menucls =document.getElementById("menucls");
+        function menuclose(){
+            menu.style.top="-100px";
+            menu.style.opacity="0";
+            menuopn.style.display="block";
+            menucls.style.display="none";
+        }
+    </script>
+</html>
